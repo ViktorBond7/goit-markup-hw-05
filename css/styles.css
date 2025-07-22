@@ -8,7 +8,7 @@
   --hover-color: #404bbf;
   --hover-background-social-footer: #31d0aa;
   --hover-background-social: #404bbf;
-  --background-color-social: #4d5ae5;
+  --background-color-social-button: #4d5ae5;
   --color-icon: #f4f4fd;
 }
 
@@ -187,7 +187,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -324,7 +324,7 @@ img {
   height: 100%;
   justify-content: center;
   align-items: center;
-  background-color: var(--background-color-social);
+  background-color: var(--background-color-social-button);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -439,7 +439,7 @@ img {
   gap: 16px;
 }
 
-.page-social {
+.page-social-subscribe {
   font-weight: 500;
   line-height: 1.5;
   color: #fff;
@@ -449,6 +449,57 @@ img {
 .foter-icon-hover:hover,
 .foter-icon-hover:focus {
   background-color: var(--hover-background-social-footer);
+}
+
+.container-subscribe {
+  margin-left: auto;
+}
+
+.input-subscribe {
+  border: 1px solid var(--hover-background-social-footer);
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  margin-right: 24px;
+  padding-left: 16px;
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-subscribe:placeholder-shown {
+  border-color: #fff;
+}
+
+.input-subscribe::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.button-subscribe {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 165px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: var(--background-color-social-button);
+  border: none;
+  margin-bottom: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+  background-color: var(--hover-background-social-footer);
+}
+
+.svg-subscribe {
+  fill: #fff;
 }
 
 /* were 772 */
