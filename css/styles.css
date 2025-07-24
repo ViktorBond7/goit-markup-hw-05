@@ -42,6 +42,10 @@ ol {
   margin: 0;
 }
 
+input {
+  background-color: transparent;
+}
+
 button {
   cursor: pointer;
 }
@@ -464,8 +468,7 @@ img {
   padding-left: 16px;
   outline: none;
   color: #fff;
-  background-color: transparent;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-subscribe:placeholder-shown {
@@ -514,6 +517,7 @@ img {
 .container-modal {
   width: 408px;
   min-height: 584px;
+  padding: 72px 24px 24px 24px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
@@ -524,4 +528,160 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* were 772 */
+
+.close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #e7e9fc;
+  line-height: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  border: none;
+  background-color: var(--hover-color);
+  fill: #fff;
+}
+
+.page-modal {
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--primary-accent-color);
+}
+
+.person-modal {
+  margin-bottom: 8px;
+}
+
+.list-modal {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.person-modal-comment {
+  margin-bottom: 16px;
+}
+
+.review-form-input-wrapper {
+  position: relative;
+}
+
+.input-modal {
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-modal:focus {
+  border-color: var(--background-color-social-button);
+}
+
+.input-modal:focus + .icon-person-modal {
+  fill: var(--background-color-social-button);
+}
+
+.comment-modal {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 8px 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  outline: transparent;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment-modal:focus {
+  border-color: var(--background-color-social-button);
+}
+.icon-person-modal {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.person-modal-checkbox {
+  margin-bottom: 24px;
+}
+
+.review-form-own-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  fill: transparent;
+  margin-right: 8px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accept-checkbox:checked
+  + .review-form-own-checkbox-label
+  > .review-form-own-checkbox {
+  background-color: var(--hover-color);
+  fill: #f4f4fd;
+  border: 1px solid var(--hover-color);
+}
+
+.review-form-own-checkbox-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.modal-link {
+  line-height: 1.33;
+  text-decoration: underline;
+  color: #4d5ae5;
+}
+
+.button-modal {
+  width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  border: none;
+  display: block;
+  background-color: var(--background-color-social-button);
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-modal:hover,
+.button-modal:focus {
+  background-color: var(--hover-color);
+}
