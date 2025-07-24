@@ -60,7 +60,7 @@
       <section class="section-hero">
         <div class="container container-hero">
           <h1 class="title-hero">Effective Solutions for Your Business</h1>
-          <button class="button-hero" type="button">Order Service</button>
+          <button class="button-hero" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
 
@@ -494,9 +494,9 @@
     </footer>
 
     <!-- beckdrop -->
-    <div class="beckdrop">
+    <div class="backdrop" data-modal>
       <div class="container-modal">
-        <button class="close-btn" type="button" >
+        <button class="close-btn" type="button" data-modal-close>
           <svg
             class="close-btn-icon"
             width="8"
@@ -598,6 +598,7 @@
       </div>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
-<!-- width="24" height="24" -->
