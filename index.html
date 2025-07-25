@@ -60,7 +60,9 @@
       <section class="section-hero">
         <div class="container container-hero">
           <h1 class="title-hero">Effective Solutions for Your Business</h1>
-          <button class="button-hero" type="button" data-modal-open>Order Service</button>
+          <button class="button-hero-modal" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -472,16 +474,17 @@
         <div class="container-subscribe">
           <p class="page-social-subscribe">Subscribe</p>
           <form class="form-subscribe">
-            <label>
+            <label class="label-subscribe-footer">
               <input
                 class="input-subscribe"
                 type="email"
+                name="email"
                 placeholder="E-mail"
               />
             </label>
             <button
               class="button-subscribe page-social-subscribe"
-              type="button"
+              type="submit"
             >
               Subscribe
               <svg class="svg-subscribe" width="24" height="24">
@@ -525,7 +528,7 @@
               </svg>
             </div>
           </div>
-  
+
           <div class="person-modal">
             <label class="list-modal" for="user-tel">Phone</label>
             <div class="review-form-input-wrapper">
@@ -543,7 +546,7 @@
               </svg>
             </div>
           </div>
-  
+
           <div class="person-modal">
             <label class="list-modal" for="user-email">Email</label>
             <div class="review-form-input-wrapper">
@@ -558,7 +561,7 @@
               </svg>
             </div>
           </div>
-  
+
           <div class="person-modal-comment">
             <label class="list-modal" for="user-comment">Comment</label>
             <textarea
@@ -568,7 +571,7 @@
               placeholder="Text input"
             ></textarea>
           </div>
-  
+
           <div class="person-modal-checkbox">
             <input
               class="accept-checkbox visually-hidden"
@@ -592,10 +595,9 @@
               <a class="modal-link" href="">Privacy Policy</a>
             </label>
           </div>
-  
-          <button class="button-modal" type="submit">Send</button>
+
+          <button class="button-hero-modal" type="submit">Send</button>
         </form>
-      </div>
       </div>
     </div>
 
